@@ -11,8 +11,8 @@ static int gaps                            = 1;  /* 1 means gaps between windows
 static const unsigned int gappx            = 8; /* gap pixel between windows */
 static const unsigned int borderpx         = 2;  /* border pixel of windows */
 static const float rootcolor[]             = COLOR(0x181616ff);
-static const float bordercolor[]           = COLOR(0x2a2a37ff);
-static const float focuscolor[]            = COLOR(0x54546dff);
+static const float bordercolor[]           = COLOR(0x2a2a37aa);
+static const float focuscolor[]            = COLOR(0x54546ddd);
 static const float urgentcolor[]           = COLOR(0xa6a69cff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
@@ -65,7 +65,8 @@ static const struct xkb_rule_names xkb_rules = {
 	/* example:
 	.options = "ctrl:nocaps",
 	*/
-	.options = "",
+	.options = "grp:alt_shift_toggle",
+	.layout = "us,ru",
 };
 
 static const int repeat_rate = 25;
