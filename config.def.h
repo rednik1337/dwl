@@ -55,7 +55,7 @@ static const Layout layouts[] = {
 /* NOTE: ALWAYS add a fallback rule, even if you are completely sure it won't be used */
 static const MonitorRule monrules[] = {
         /* name       mfact  nmaster scale layout       rotate/reflect              x  y  resx  resy  rate      mode adaptive*/
-	{ "DP-2",     0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL, 0, 0, 3440, 1440, 144.000f, 1,   0 },
+	{ "DP-1",     0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL, 0, 0, 3440, 1440, 144.000f, 1,   0 },
 	{ 0,          0.55f, 1,      1,    &layouts[0], WL_OUTPUT_TRANSFORM_NORMAL, -1,-1,-1,   -1,   -1,       -1,  -1 },
 };
 
