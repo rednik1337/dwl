@@ -113,7 +113,7 @@ LIBINPUT_CONFIG_ACCEL_PROFILE_FLAT
 LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE
 */
 static const enum libinput_config_accel_profile accel_profile = LIBINPUT_CONFIG_ACCEL_PROFILE_ADAPTIVE;
-static const double accel_speed = 0.0;
+static const double accel_speed = -1.0;
 
 /* You can choose between:
 LIBINPUT_CONFIG_TAP_MAP_LRM -- 1/2/3 finger tap maps to left/right/middle
@@ -143,7 +143,7 @@ static const char *menucmd[] = { "wmenu-run", NULL };
 static const Key keys[] = {
 	/* modifier                  key          function        argument */
 	{ MODKEY,                    Key_space,       spawn,          {.v = menucmd} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, Key_q,  spawn,          {.v = termcmd} },
+	{ MODKEY,                    Key_q,  spawn,          {.v = termcmd} },
 	{ MODKEY,                    Key_j,       focusstack,     {.i = +1} },
 	{ MODKEY,                    Key_k,       focusstack,     {.i = -1} },
 	{ MODKEY,                    Key_i,       incnmaster,     {.i = +1} },
@@ -152,7 +152,7 @@ static const Key keys[] = {
 	{ MODKEY,                    Key_l,       setmfact,       {.f = +0.05f} },
 	//{ MODKEY,                    Key_Return,  zoom,           {0} },
 	//{ MODKEY,                    Key_Tab,     view,           {0} },
-	{ MODKEY|WLR_MODIFIER_SHIFT, Key_c,       killclient,     {0} },
+	{ MODKEY,                    Key_c,       killclient,     {0} },
 	//{ MODKEY,                    Key_t,       setlayout,      {.v = &layouts[0]} },
 	//{ MODKEY,                    Key_f,       setlayout,      {.v = &layouts[1]} },
 	//{ MODKEY,                    Key_m,       setlayout,      {.v = &layouts[2]} },
