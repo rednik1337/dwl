@@ -23,7 +23,7 @@ index 22d2171..790c73d 100644
 +static const int cursor_timeout = 5;
 +
  /* If you want to use the windows key for MODKEY, use WLR_MODIFIER_LOGO */
- #define MODKEY WLR_MODIFIER_LOGO
+ #define MODKEY WLR_MODIFIER_ALT
  
 diff --git a/dwl.c b/dwl.c
 index 72892d9..4090d73 100644
@@ -185,5 +185,4 @@ index 72892d9..4090d73 100644
  Monitor *
 -- 
 2.45.2
-
 
