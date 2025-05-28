@@ -10,9 +10,9 @@ static const int smartgaps                 = 0;  /* 1 means no outer gap when th
 static int gaps                            = 1;  /* 1 means gaps between windows are added */
 static const unsigned int gappx            = 8; /* gap pixel between windows */
 static const unsigned int borderpx         = 2;  /* border pixel of windows */
-static const float rootcolor[]             = COLOR(0x181616ff);
-static const float bordercolor[]           = COLOR(0x2a2a37aa);
-static const float focuscolor[]            = COLOR(0x54546ddd);
+static const float rootcolor[]             = COLOR(0x161616ff);
+static const float bordercolor[]           = COLOR(0x2a372abb);
+static const float focuscolor[]            = COLOR(0x4e6533cc);
 static const float urgentcolor[]           = COLOR(0xa6a69cff);
 /* This conforms to the xdg-protocol. Set the alpha to zero to restore the old behavior */
 static const float fullscreen_bg[]         = {0.1f, 0.1f, 0.1f, 1.0f}; /* You can also use glsl colors */
@@ -26,7 +26,8 @@ static int log_level = WLR_ERROR;
 /* Autostart */
 static const char *const autostart[] = {
         "foot", "--server", 0,
-        "swaybg", "-m", "fill", "-i", "/home/aeterna/pictures/wallpaper-3840x2160-3.png", 0,
+        "swaybg", "-m", "fill", "-i", "/home/aeterna/pictures/wall.jpg", 0,
+        "dunst", 0,
         0
 };
 
